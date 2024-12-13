@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My UI5 App</title>
+    <script
+      id="sap-ui-bootstrap"
+      src="https://ui5.sap.com/resources/sap-ui-core.js"
+      data-sap-ui-libs="sap.m, sap.tnt"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-resourceroots='{
+        "my.ui5.app": "./"
+      }'>
+    </script>
+    <script>
+      sap.ui.getCore().attachInit(function () {
+        sap.ui.require(["my/ui5/app/Component"], function (Component) {
+          new Component().placeAt("content");
+        });
+      });
+    </script>
+  </head>
+  <body class="sapUiBody" id="content"></body>
+</html>

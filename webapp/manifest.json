@@ -1,0 +1,57 @@
+{
+  "sap.app": {
+    "id": "my.ui5.app",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "My UI5 App",
+    "description": "A SAP UI5 application with reusable base layout"
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "my.ui5.app.view.Base",
+      "type": "XML",
+      "async": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.90.0",
+      "libs": {
+        "sap.m": {},
+        "sap.tnt": {}
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.ui.core.routing.Router",
+        "viewType": "XML",
+        "viewPath": "my.ui5.app.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "home",
+          "target": "home"
+        },
+        {
+          "pattern": "about",
+          "name": "about",
+          "target": "about"
+        }
+      ],
+      "targets": {
+        "home": {
+          "viewName": "Home",
+          "viewLevel": 1
+        },
+        "about": {
+          "viewName": "About",
+          "viewLevel": 2
+        }
+      }
+    }
+  }
+}

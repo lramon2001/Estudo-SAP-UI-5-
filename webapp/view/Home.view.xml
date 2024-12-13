@@ -1,0 +1,10 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="my.ui5.app.controller.Home">
+    <Page title="Home">
+        <content>
+            <Text text="Welcome to the Home Page!" />
+        </content>
+    </Page>
+</mvc:View>

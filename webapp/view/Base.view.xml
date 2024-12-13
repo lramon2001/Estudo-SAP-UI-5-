@@ -1,0 +1,34 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    controllerName="my.ui5.app.controller.Base">
+    <tnt:ToolPage>
+        <tnt:header>
+            <Bar>
+                <Label text="My Application" />
+            </Bar>
+        </tnt:header>
+        <tnt:sideContent>
+            <tnt:SideNavigation>
+                <tnt:NavigationList>
+                    <tnt:NavigationListItem
+                        text="Home"
+                        icon="sap-icon://home"
+                        select="onNavTo"
+                        key="home" />
+                    <tnt:NavigationListItem
+                        text="About"
+                        icon="sap-icon://hint"
+                        select="onNavTo"
+                        key="about" />
+                </tnt:NavigationList>
+            </tnt:SideNavigation>
+        </tnt:sideContent>
+        <tnt:mainContent>
+            <App id="app">
+                <!-- Views serão carregadas dinamicamente aqui -->
+            </App>
+        </tnt:mainContent>
+    </tnt:ToolPage>
+</mvc:View>

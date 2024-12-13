@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "lib": ["ES6", "DOM"],
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "typeRoots": ["./node_modules/@types"],
+      "types": ["openui5"]
+    },
+    "include": ["webapp/**/*"]
+  }
+  
